@@ -8,4 +8,4 @@
 
 # Live URL:
 
-- To-do
+- [Github Pages](https://g0maa.github.io/product-preview-card-component/)
