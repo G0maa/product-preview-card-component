@@ -1,7 +1,24 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  background-color: var(--cream);
   font-family: "Montserrat", sans-serif;
-  color: hsl(228, 12%, 48%);
+  color: var(--grayish-blue);
 }
 
 main {
@@ -9,7 +26,7 @@ main {
   max-width: 720px;
   margin: 0 auto;
   margin-top: 25vh;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--white);
   border-radius: 10px;
 }
 
@@ -64,7 +81,7 @@ h1 {
 
 #price {
   font-size: 2rem;
-  color: hsl(158, 36%, 37%);
+  color: var(--dark-cyan);
   margin-right: 1rem;
 }
 
@@ -73,19 +90,19 @@ p {
 }
 
 button {
-  background-color: hsl(158, 36%, 37%);
+  background-color: var(--dark-cyan);
   border: 0;
   padding: 1rem;
   border-radius: 10px;
   width: 100%;
   font-family: "Montserrat", sans-serif;
-  color: hsl(0, 0%, 100%);
+  color: var(--white);
   font-weight: 800;
   font-size: 1rem;
 }
 
 button:hover {
-  background-color: hsl(212, 21%, 14%);
+  background-color: var(--dark-blue);
   cursor: pointer;
 }
 
