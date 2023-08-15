@@ -24,19 +24,22 @@ body {
 main {
   display: flex;
   max-width: 720px;
+  /* width: 720px; */
   margin: 0 auto;
   margin-top: 25vh;
+  height: 450px;
   background-color: var(--white);
   border-radius: 10px;
 }
 
 section {
-  padding: 1rem 1.5rem;
+  padding: 2rem 2.5rem;
 }
 
 #perfume-img {
-  max-height: 50vh;
-  object-fit: fill;
+  height: 100%;
+  width: 50vw;
+  object-fit: cover;
   border-radius: 10px 0 0 10px;
 }
 
@@ -76,6 +79,10 @@ p {
   line-height: 1.5rem;
 }
 
+#ad {
+  margin-top: 1.5rem;
+}
+
 button {
   background-color: var(--dark-cyan);
   border: 0;
@@ -99,6 +106,7 @@ button > img {
 
 @media (max-width: 720px) {
   main {
+    height: 100%;
     flex-direction: column;
     margin: 1vh 1vh;
   }
